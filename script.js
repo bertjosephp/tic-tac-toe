@@ -161,7 +161,7 @@ const gameController = (() => {
         // check diagonals
         if (
             ((gameBoard.getBoard()[0] === gameBoard.getBoard()[4]) && (gameBoard.getBoard()[4] === gameBoard.getBoard()[8]) && (gameBoard.getBoard()[8] !== "")) || 
-            ((gameBoard.getBoard()[2] === gameBoard.getBoard()[4]) && (gameBoard.getBoard()[4] === gameBoard.getBoard()[6]) && (gameBoard.getBoard()[5] !== ""))
+            ((gameBoard.getBoard()[2] === gameBoard.getBoard()[4]) && (gameBoard.getBoard()[4] === gameBoard.getBoard()[6]) && (gameBoard.getBoard()[6] !== ""))
         ) {
             return true;
         }
