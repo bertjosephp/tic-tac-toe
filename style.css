@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(to right, #8693AB, #BDD4E7);
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container {
+    height: 880px;
+    width: 720px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 black;
+    margin: auto auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-title {
+    margin-top: 32px;
+}
+
+.game-title h1 {
+    margin: 0;
+    font-family: 'Kanit', Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.message-box {
+    margin: 16px 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.game-board {
+    margin: 32px 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.board-tile {
+    border: 3px solid black;
+    padding: 10px;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 8rem;
+    font-weight: 600;
+    color: #d1d5db;
+    transition: 200ms;
+    cursor: pointer;
+    user-select: none;
+}
+
+.top {
+    border-top: none;
+}
+
+.left {
+    border-left: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.restart-button {
+    font-family: 'Kanit', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 16px 0 32px 0;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background-color: #d1d5db;
+    transform: scale(1.1);
+}
